@@ -31,6 +31,8 @@ def end():
             print('Colder')
         elif abs(guesses[-1] - random_integer) < abs(guesses[-2] - random_integer):
             print('Warmer')
+        elif abs(guesses[-1] - random_integer) == abs(guesses[-2] - random_integer):
+            print('You are a equal distance from the number as you were before this guess')
         elif abs(guesses[-1] - guesses[-2]) == 0:
             print('You have typed the same integer again, please provide a new integer')
             continue
